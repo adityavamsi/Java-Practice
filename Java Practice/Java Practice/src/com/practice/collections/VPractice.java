@@ -13,7 +13,7 @@ public class VPractice {
 		System.out.println(v);
 		
 		//Capacity of a vector, Initially the capacity of the vector is 10, but if the elements occupy 50% of capacity
-		//then the capacity increases to another 50%, i.e 20...40...80..etc
+		//then the capacity doubles, i.e 20...40...80..etc
 		System.out.println(v.capacity());
 		
 		//Size - shows how many elements are present in vector
@@ -36,6 +36,9 @@ public class VPractice {
 		//Generics are introduced in java 1.5
 		Vector<Integer> v3 = new Vector<Integer>();
 		//Here we can specify the type of Object we want to store in vector
+		//Why primitive data types are not used in generics i.e, int,float, are not used?
+		//Because using primitives we cannot create objects, so therefore we use their super classes i.e Integer, Float etc.
+		//Because collections are made up of objects
 		
 		Object[] arr = new Object[]{1, 2, 4};
 		Vector v5  =new Vector(Arrays.asList(arr));
